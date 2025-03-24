@@ -1,0 +1,69 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cool Things Are Coming</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				min-height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #0f172a;
+				font-family: 'Space Mono', monospace;
+			}
+
+			.container {
+				text-align: center;
+				color: #e2e8f0;
+			}
+
+			.typewriter {
+				font-size: clamp(1.5rem, 5vw, 2.5rem);
+				font-weight: 700;
+				overflow: hidden;
+				border-right: 0.15em solid #60a5fa;
+				white-space: nowrap;
+				margin: 0 auto;
+				letter-spacing: 0.15em;
+				animation: 
+					typing 3.5s steps(40, end),
+					blink-caret 0.75s step-end infinite;
+			}
+
+			@media (max-width: 768px) {
+				.typewriter {
+					white-space: normal;
+					border-right: none;
+					animation: none;
+					text-align: center;
+				}
+			}
+
+			@keyframes typing {
+				from { width: 0 }
+				to { width: 100% }
+			}
+
+			@keyframes blink-caret {
+				from, to { border-color: transparent }
+				50% { border-color: #60a5fa }
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="typewriter">cool things are coming</div>
+		</div>
+	</body>
+</html>
